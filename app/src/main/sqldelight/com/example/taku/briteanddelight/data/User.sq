@@ -3,3 +3,6 @@ CREATE TABLE user (
   first_name TEXT NOT NULL,
   last_name TEXT NOT NULL
 );
+
+select_all:
+SELECT * FROM user;

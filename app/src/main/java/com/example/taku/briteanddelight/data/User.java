@@ -14,4 +14,8 @@ public abstract class User implements UserModel, Parcelable {
 
     public static final Func1<Cursor, User> MAPPER = cursor -> new Mapper<>(FACTORY).map(cursor);
 
+    public String getFullName() {
+        return first_name() + " " + last_name();
+    }
+
 }
